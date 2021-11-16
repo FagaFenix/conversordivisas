@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- styles -->
+    <link rel="stylesheet" href="/styles/styles.css">
+    <title>Conversor de divisas</title>
+</head>
+<body>
+    
+       <div class="container">
+           <div class="casilla_valor">
+               <input type="number" placeholder="Ingresa el valor a convertir" id="valor" required>
+           </div>
+           
+           <div class="seleccion">
+           <div class="selection1">
+               <button class="button-sel" id="btn1-sel" onclick="captura1()">Selecciona Moneda</button>
+           </div>
+
+           <div class="selection2">
+                <button class="button-sel" id="btn2-sel" onclick="captura2()">Selecciona Moneda</button>
+            </div>
+            <button class="button-conver" id="buttton" onclick="convertir()" value="convertir">Convertir</button>
+           </div> 
+           
+           <!-- mensaje de error terminar -->
+        <div class="mensaje" id="mensaje">
+            <p><i class="fas fa-exclamation-triangle"></i><b>Error:</b>Por favor verifique la informacion suministrada</p>
+        </div>
+        </div>      
+
+    
+       <!-- scripts -->
+       <script type="text/javascript" src="/js/main.js"></script>
+</body>
+</html>
